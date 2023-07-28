@@ -25,6 +25,8 @@ public class ScrollScreenshotTest {
 		Screenshot s=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
         ImageIO.write(s.getImage(),"PNG",new File("..\\EducacionIT-64249\\Evidencias\\fullPageScreenshot.png"));
 		
+        System.out.println("Termine el script!");
+        
 		driver.close();
 	}
 	
